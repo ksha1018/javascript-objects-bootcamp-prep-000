@@ -20,7 +20,8 @@ console.log(updatePlaylist(playlist, 'park', 'glass'));
 
 function removeFromPlaylist(obj, key){
   delete obj[key];
+  return obj;
 }
 
-removeFromPlaylist(playlist, 'kwon');
-console.log(playlist);
+console.log(removeFromPlaylist(playlist, 'kwon'));
+

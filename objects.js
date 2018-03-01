@@ -17,3 +17,10 @@ function updatePlaylist(obj, key, value){
 }
 
 console.log(updatePlaylist(playlist, 'park', 'glass'));
+
+function removeFromPlaylist(obj, key){
+  delete obj[key];
+}
+
+removeFromPlaylist(playlist, 'kwon');
+console.log(playlist);
